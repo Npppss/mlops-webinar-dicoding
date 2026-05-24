@@ -1,0 +1,72 @@
+{
+  "age": {
+    "mean": 43.643,
+    "std": 14.9959,
+    "min": 18.0,
+    "max": 69.0,
+    "median": 44.0,
+    "nulls": 0
+  },
+  "tenure": {
+    "mean": 35.778,
+    "std": 20.6959,
+    "min": 1.0,
+    "max": 71.0,
+    "median": 36.0,
+    "nulls": 0
+  },
+  "monthly_charges": {
+    "mean": 70.7271,
+    "std": 28.5424,
+    "min": 20.05,
+    "max": 119.94,
+    "median": 69.43,
+    "nulls": 0
+  },
+  "num_products": {
+    "mean": 2.48,
+    "std": 1.1184,
+    "min": 1.0,
+    "max": 4.0,
+    "median": 2.0,
+    "nulls": 0
+  },
+  "support_calls": {
+    "mean": 4.509,
+    "std": 2.8277,
+    "min": 0.0,
+    "max": 9.0,
+    "median": 5.0,
+    "nulls": 0
+  },
+  "charge_per_tenure": {
+    "mean": 3.933,
+    "std": 6.165,
+    "min": 0.295,
+    "max": 55.195,
+    "median": 1.9147,
+    "nulls": 0
+  },
+  "support_intensity": {
+    "mean": 0.2622,
+    "std": 0.5043,
+    "min": 0.0,
+    "max": 4.5,
+    "median": 0.125,
+    "nulls": 0
+  },
+  "is_high_value": {
+    "mean": 0.485,
+    "std": 0.5,
+    "min": 0.0,
+    "max": 1.0,
+    "median": 0.0,
+    "nulls": 0
+  },
+  "_metadata": {
+    "n_rows": 1000,
+    "n_features": 8,
+    "timestamp": "2026-05-24T03:56:20.247579+00:00",
+    "churn_rate": 0.532
+  }
+}

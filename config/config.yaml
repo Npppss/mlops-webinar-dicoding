@@ -1,0 +1,48 @@
+# MLOps Project Configuration
+
+project:
+  name: "churn_prediction"
+  version: "1.0.0"
+  description: "Customer churn prediction system"
+
+data:
+  raw_path: "data/raw/raw_data.csv"
+  processed_path: "data/processed/processed_data.csv"
+  stats_path: "data/processed/stats.json"
+  ingestion:
+    n_samples: 1000
+    seed: 42
+  preprocessing:
+    train_test_split: 0.8
+    handle_missing: "median"
+
+model:
+  type: "logistic_regression"
+  path: "model/churn_model.pkl"
+  registry_path: "model_registry"
+  training:
+    C: 1.0
+    max_iter: 1000
+    random_state: 42
+    test_size: 0.2
+
+api:
+  host: "0.0.0.0"
+  port: 8000
+  debug: false
+  cors_origins: ["*"]
+
+logging:
+  level: "INFO"
+  log_file: "logs/app.log"
+
+mlflow:
+  tracking_uri: "file:./mlflow"
+  experiment_name: "churn_prediction"
+  registry_uri: "file:./mlflow"
+
+aws:
+  region: "us-east-1"
+  ecr_repo: "churn-prediction-api"
+  beanstalk_app: "churn-api"
+  beanstalk_env: "churn-api-prod"
